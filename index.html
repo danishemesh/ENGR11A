@@ -58,14 +58,6 @@
             "Project 5: Advanced torture test for printer"
         ];
 
-        // Function to display a random project
-        function showRandomProject() {
-            // Generate a random index based on the array length
-            const randomIndex = Math.floor(Math.random() * projects.length);
-            
-            // Display the selected project in the div
-            document.getElementById("projectDisplay").innerHTML = projects[randomIndex];
-        }
         <h1 class="main-title">My ENGR 11A Website</h1>
 
     <h2>Welcome to my website!!!</h2>
@@ -129,6 +121,17 @@
         function showNewPhotos() {
             document.getElementById('current-photos').style.display = 'none';
             document.getElementById('new-photos').style.display = 'block';
+            
+        }
+
+        
+        // Function to display a random project
+        function showRandomProject() {
+            // Generate a random index based on the array length
+            const randomIndex = Math.floor(Math.random() * projects.length);
+            
+            // Display the selected project in the div
+            document.getElementById("projectDisplay").innerHTML = projects[randomIndex];
         }
     </script>
 
