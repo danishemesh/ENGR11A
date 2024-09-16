@@ -1,36 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Bare - ENGR 11A PROJECT ; )</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-            <h1>My ENGR 11A Project</h1>
-             <h2>project Prusa Slicer software and the Prusa MINI+ printer</h2>
-    <h2>First 3D Print Name tag</h2>
 
-    </head>
-    <body>
-            <p> The first print is a 3D print of my name Daniel Shemesh as a name tag.</p>
-    <img src="nametag.jpg" alt="Nametag 3D Print" width="300">
-        
-     <button onclick="showCurrentPhotos()">Show Current Photos</button>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Bare - ENGR 11A PROJECT ; )</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <h1>My ENGR 11A Project</h1>
+    <h2>project Prusa Slicer software and the Prusa MINI+ printer</h2>
+</head>
+
+<body>
+    <h2>First 3D Print: Name tag</h2>
+    <p>The first print is a 3D print of my name Daniel Shemesh as a name tag.</p>
+
+    <!-- Buttons to switch between current and new photos -->
+    <button onclick="showCurrentPhotos()">Show Current Photos</button>
     <button onclick="showNewPhotos()">Show New Photos</button>
-            <div id="current-photos" style="display:none;">
+
+    <!-- Section for current photos -->
+    <div id="current-photos" style="display:none;">
         <h2>Second 3D Print: Calibration Test</h2>
+        <p>The second 3D print is designed to push the limits of the machine. I chose to print out a rifleman rfl-8d which is also known as a computer game character. The issue I saw with this print was that the arms were too long - more than a 45-degree angle.</p>
+        <img src="nametag.jpg" alt="Nametag 3D Print" width="300">
+        <img src="second.jpg" alt="Calibration Test 3D Print" width="300">
+        <img src="second-print.jpg" alt="Calibration Test 3D Print" width="300">
+        <img src="second-print2.jpg" alt="Calibration Test 3D Print" width="300">
+        <img src="second-print3.jpg" alt="Calibration Test 3D Print" width="300">
+    </div>
 
-            <h2>Second 3D Print: printing torture test or calibration print</h2>
-    <p>The second 3D print is designed to push the limits of the machine. I choose to print out a rifleman rfl-8d wich is also know as a computer game character. the issue I saw with his print was his arms were to long - more then a 45 degree angle .</p>
-    <img src="second.jpg" alt="Calibration Test 3D Print" width="300">
-    <img src="second-print.jpg" alt="Calibration Test 3D Print" width="300">
-    <img src="second-print2.jpg" alt="Calibration Test 3D Print" width="300">
-    <img src="second-print3.jpg" alt="Calibration Test 3D Print" width="300">
-
+    <!-- Section for new photos -->
     <div id="new-photos" style="display:none;">
         <h2>New 3D Print Photos</h2>
         <p>Here are the newly added prints from my ongoing work!</p>
@@ -38,8 +42,11 @@
         <img src="new-photo2.jpg" alt="New 3D Print 2" width="300">
     </div>
 
-    <h3> Post reflection</h3>
-    <p> Coming to ENGR 11A, I was very excited to learn how to 3D print and design different objects. In the nametag project, I had much fun creating my first-ever 3D print and succeeding on my very first try. On the other hand, the second print was a lot more complicated. I did many tries but still haven't succeeded in finding a print that will fit the requirements perfectly. While searching intensively for a new print, I at last found a perfect sort of action figure-looking print that ended up being my final print. One of my future goals is to become an entrepreneur, make different products that will solve problems, and make the world a better place. While being in this class, my expectations have exited as we are learning not just about designing but also about creating a website. This leaves me with a feeling that I am getting closer and closer to making my dream a reality. </p>
+    <h3>Post reflection</h3>
+    <p>Coming to ENGR 11A, I was very excited to learn how to 3D print and design different objects. In the nametag project, I had much fun creating my first-ever 3D print and succeeding on my very first try. On the other hand, the second print was a lot more complicated. I did many tries but still haven't succeeded in finding a print that will fit the requirements perfectly. While searching intensively for a new print, I at last found a perfect sort of action figure-looking print that ended up being my final print. One of my future goals is to become an entrepreneur, make different products that will solve problems, and make the world a better place. While being in this class, my expectations have excited as we are learning not just about designing but also about creating a website. This leaves me with a feeling that I am getting closer and closer to making my dream a reality.</p>
+
+    <!-- JavaScript to toggle between current and new photos -->
+    <script>
         function showCurrentPhotos() {
             document.getElementById('current-photos').style.display = 'block';
             document.getElementById('new-photos').style.display = 'none';
@@ -49,40 +56,12 @@
             document.getElementById('current-photos').style.display = 'none';
             document.getElementById('new-photos').style.display = 'block';
         }
+    </script>
 
-        <!-- Responsive navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="#">Start Bootstrap</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Page content-->
-        <div class="container">
-            <div class="text-center mt-5">
-                <h1>A Bootstrap 5 Starter Template</h1>
-                <p class="lead">A complete project boilerplate built with Bootstrap</p>
-                <p>Bootstrap v5.2.3</p>
-            </div>
-        </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
 </html>
