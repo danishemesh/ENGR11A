@@ -25,9 +25,47 @@
             border-radius: 10px; /* Rounded corners */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
         }
+           <style>
+        .random-button {
+            font-size: 1.5em;
+            padding: 10px 20px;
+            color: #fff;
+            background-color: #3498db; /* Blue color */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
     </style>
 
 <body>
+
+     <h1>Click to Get a Random Project</h1>
+
+    <!-- Button to get a random project -->
+    <button class="random-button" onclick="showRandomProject()">Get Random Project</button>
+
+    <!-- Placeholder where the random project will be displayed -->
+    <div class="project-display" id="projectDisplay"></div>
+
+    <!-- JavaScript code for the button functionality -->
+    <script>
+        // Array of random projects (can be descriptions or links)
+        const projects = [
+            "Project 1: 3D printed nametag",
+            "Project 2: Calibration test print",
+            "Project 3: Custom-designed action figure",
+            "Project 4: Complex multi-part assembly",
+            "Project 5: Advanced torture test for printer"
+        ];
+
+        // Function to display a random project
+        function showRandomProject() {
+            // Generate a random index based on the array length
+            const randomIndex = Math.floor(Math.random() * projects.length);
+            
+            // Display the selected project in the div
+            document.getElementById("projectDisplay").innerHTML = projects[randomIndex];
+        }
         <h1 class="main-title">My ENGR 11A Website</h1>
 
     <h2>Welcome to my website!!!</h2>
