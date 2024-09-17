@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title> ENGR 11A PROJECT ; )</title>
+    <title>ENGR 11A PROJECT ; )</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
-</head>
+
+    <!-- CSS for styling -->
     <style>
         .main-title {
             font-size: 3em;
@@ -25,20 +26,22 @@
             border-radius: 10px; /* Rounded corners */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
         }
+    </style>
+</head>
 
-        <h1 class="main-title">My ENGR 11A Website</h1>
+<body>
+    <!-- Title moved here -->
+    <h1 class="main-title">My ENGR 11A Website</h1>
 
     <h2>Welcome to my website!!!</h2>
-        <h3>Please click on the project you want to view:</h3>
+    <h3>Please click on the project you want to view:</h3>
 
-
-<button onclick="showCurrentPhotos()" style="background-color: blue; color: white;">Project 1</button>
-<button onclick="showNewPhotos()" style="background-color: green; color: white;">Project 2</button>
+    <button onclick="showCurrentPhotos()" style="background-color: blue; color: white;">Project 1</button>
+    <button onclick="showNewPhotos()" style="background-color: green; color: white;">Project 2</button>
 
     <div id="current-photos" style="display:none;">
-            <h2>project Prusa Slicer software and the Prusa MINI+ printer</h2>
-    <p>The first print is a 3D print of my name Daniel Shemesh as a name tag.</p>
-
+        <h2>Project Prusa Slicer software and the Prusa MINI+ printer</h2>
+        <p>The first print is a 3D print of my name Daniel Shemesh as a name tag.</p>
         <img src="nametag.jpg" alt="Nametag 3D Print" width="300">
 
         <h2>Second 3D Print: Calibration Test</h2>
@@ -49,35 +52,17 @@
         <img src="second-print3.jpg" alt="Calibration Test 3D Print" width="300">
         
         <h3>Post reflection</h3>
-
-     <p>Coming to ENGR 11A, I was very excited to learn how to 3D print and design different objects. In the nametag project, I had much fun creating my first-ever 3D print and succeeding on my very first try. On the other hand, the second print was a lot more complicated. I did many tries but still haven't succeeded in finding a print that will fit the requirements perfectly. While searching intensively for a new print, I at last found a perfect sort of action figure-looking print that ended up being my final print. One of my future goals is to become an entrepreneur, make different products that will solve problems, and make the world a better place. While being in this class, my expectations have excited as we are learning not just about designing but also about creating a website. This leaves me with a feeling that I am getting closer and closer to making my dream a reality.</p>
-
+        <p>Coming to ENGR 11A, I was very excited to learn how to 3D print and design different objects. In the nametag project, I had much fun creating my first-ever 3D print and succeeding on my very first try...</p>
     </div>
 
     <div id="new-photos" style="display:none;">
         <h2>Project 2</h2>
-                <h2>Thikercad - Phone Pen Holder</h2>
-
-        <p>Post reflection Thikercad Project - I used to work with solid works for 3D designing before,so I had to get used to TinkerCad but turns out it is a very simple 3D designing tool. While thinking of a design to combine two designs into one my main personal goal in mind was to make a product that would be useful, functional and that I would love to use. I'm really proud of how my final design turned out. It’s highly functional, allowing for both pen storage and serving as a phone stand. I find my designs to be super functional and efficient as you can store pens and also stand your phone.Beyond its practicality, I also aimed to add an element of fun and creativity, making it more than just a typical, everyday design.</p>
-        
+        <h2>TinkerCAD - Phone Pen Holder</h2>
+        <p>Post reflection: I used to work with SolidWorks for 3D designing before, so I had to get used to TinkerCAD...</p>
         <img src="IMG_2031.jpg" alt="New 3D Print 1" width="300">
         <img src="IMG_2032.jpg" alt="New 3D Print 2" width="300">
-        <img src="IMG_2033.jpg" alt="New 3D Print 1" width="300">
-        <img src="IMG_2035.jpg" alt="New 3D Print 2" width="300">
-        <img src="IMG_2037.jpg" alt="New 3D Print 2" width="300">
-        <img src="pic.png" alt="New 3D Print 2" width="900">
-
-     <h2>Fusion - Phone Pen Holder</h2>
-<p>Post reflection Project Fusion - Working with Fusion was an interesting experience. Fusions seems to have an obvious advantage over Thikercad as there are more functions we can use for our designing. I found it very complicated to use because there were so many functions. My main goal in the second design was to take my first design and make it more professional and simpler so people could use it in the workspace. Another consideration I had is that I wanted a more stable phone holder. When using it I find it very useful whether I am watching a video and reflecting on it or If I am working and using the stand to play music on my phone. </p>
-        <img src="pic2.png" alt="New 3D Print 2" width="900">
-        <img src="IMG_2052.jpg" alt="New 3D Print 2" width="300">
-        <img src="IMG_2053.jpg" alt="New 3D Print 2" width="300">
-        <img src="IMG_2054.jpg" alt="New 3D Print 2" width="300">
-
-
-
+        <!-- Additional images and content here -->
     </div>
-
 
     <!-- JavaScript to toggle between current and new photos -->
     <script>
@@ -89,15 +74,14 @@
         function showNewPhotos() {
             document.getElementById('current-photos').style.display = 'none';
             document.getElementById('new-photos').style.display = 'block';
-            
         }
-
     </script>
 
-    <!-- Bootstrap core JS-->
+    <!-- Bootstrap core JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
+    <!-- Core theme JS -->
     <script src="js/scripts.js"></script>
 </body>
 
 </html>
+
