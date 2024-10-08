@@ -38,6 +38,8 @@
 
     <button onclick="showCurrentPhotos()" style="background-color: blue; color: white;">Project 1</button>
     <button onclick="showNewPhotos()" style="background-color: green; color: white;">Project 2</button>
+    <button onclick="showProject3Photos()" style="background-color: orange; color: white;">Project 3</button>
+
 
     <div id="current-photos" style="display:none;">
         <h2>Project Prusa Slicer software and the Prusa MINI+ printer</h2>
@@ -73,6 +75,25 @@
         <img src="IMG_2054.jpg" alt="Fusion 360 Print" width="300">
     </div>
 
+
+    <div id="project3-photos" style="display:none;">
+    <h2>Project 3: Fusion 360 - Advanced Phone Pen Holder</h2>
+    <p>Post reflection Project Fusion - Working with Fusion was an interesting experience...</p>
+    <img src="pic2.png" alt="Fusion 360 3D print of the phone pen holder" width="900">
+    <img src="IMG_2119.jpg" alt="Fusion 360 3D printed phone pen holder - side view" width="300">
+    <img src="IMG_2120.jpg" alt="Fusion 360 3D printed phone pen holder - front view" width="300">
+    <img src="IMG_2123.jpg" alt="Fusion 360 3D printed phone pen holder - top view" width="300">
+    <img src="IMG_2124.jpg" alt="Fusion 360 3D printed phone pen holder - top view" width="300">
+    <img src="IMG_2140.jpg" alt="Fusion 360 3D printed phone pen holder - top view" width="300">
+    <img src="IMG_2141.jpg" alt="Fusion 360 3D printed phone pen holder - top view" width="300">
+    <img src="IMG_2143.jpg" alt="Fusion 360 3D printed phone pen holder - top view" width="300">
+
+
+
+
+</div>
+
+
     <!-- JavaScript to toggle between current and new photos -->
     <script>
         function showCurrentPhotos() {
@@ -84,7 +105,13 @@
             document.getElementById('current-photos').style.display = 'none';
             document.getElementById('new-photos').style.display = 'block';
         }
+            function showProject3Photos() {
+        document.getElementById('current-photos').style.display = 'none';
+        document.getElementById('new-photos').style.display = 'none';
+        document.getElementById('project3-photos').style.display = 'block';
+    }
     </script>
+    
 
     <!-- Bootstrap core JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
