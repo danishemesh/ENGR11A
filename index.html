@@ -146,10 +146,12 @@
         <p>Book: WHO IS THE BUILT WORLD BUILT FOR? (ALBERT CAMUS) </p>
     </div>
 
-    <div id="showProject5-photos" style="display:none;">
-        <h2>Project 5: Alarm Clock Holder</h2>
-   
-    </div>
+   <div id="project5-photos" style="display:none;">
+    <h2>Project 5: Your Project Title</h2>
+    <p>Description of Project 5 goes here...</p>
+    <img src="your_image1.jpg" alt="Project 5 Image 1" width="300">
+    <img src="your_image2.jpg" alt="Project 5 Image 2" width="300">
+   </div>
 
     <script>
         function showCurrentPhotos() {
@@ -157,7 +159,6 @@
             document.getElementById("new-photos").style.display = "none";
             document.getElementById("project3-photos").style.display = "none";
             document.getElementById("project4-photos").style.display = "none";
-            document.getElementById("scavengerhunt-photos").style.display = "none"; 
 
         }
 
@@ -166,7 +167,6 @@
             document.getElementById("new-photos").style.display = "block";
             document.getElementById("project3-photos").style.display = "none";
             document.getElementById("project4-photos").style.display = "none";
-            document.getElementById("scavengerhunt-photos").style.display = "none"; 
 
         }
 
@@ -175,29 +175,28 @@
             document.getElementById("new-photos").style.display = "none";
             document.getElementById("project3-photos").style.display = "block";
             document.getElementById("project4-photos").style.display = "none";
-            document.getElementById("scavengerhunt-photos").style.display = "none"; 
-
-        }
+      }
 
         function showProject4Photos() {
             document.getElementById("current-photos").style.display = "none";
             document.getElementById("new-photos").style.display = "none";
             document.getElementById("project3-photos").style.display = "none";
             document.getElementById("project4-photos").style.display = "block";
-            document.getElementById("scavengerhunt-photos").style.display = "none"; 
-
 
         }
 
-                function showProject5Photos() {
-            document.getElementById("current-photos").style.display = "none";
-            document.getElementById("new-photos").style.display = "none";
-            document.getElementById("project3-photos").style.display = "none";
-            document.getElementById("project4-photos").style.display = "none";
-            document.getElementById("scavengerhunt-photos").style.display = "none"; 
-            document.getElementById("project5-photos").style.display = "block";
+    function showProject5Photos() {
+        hideAllProjects();
+        document.getElementById("project5-photos").style.display = "block";
+    }
 
-        }
+    function hideAllProjects() {
+        document.getElementById("current-photos").style.display = "none";
+        document.getElementById("new-photos").style.display = "none";
+        document.getElementById("project3-photos").style.display = "none";
+        document.getElementById("project4-photos").style.display = "none";
+        document.getElementById("project5-photos").style.display = "none";
+    }
 
     </script>
 </body>
