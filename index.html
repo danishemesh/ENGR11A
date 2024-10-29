@@ -41,6 +41,7 @@
     <button onclick="showProject3Photos()" style="background-color: orange; color: white;">Project 3</button>
     <button onclick="showProject4Photos()" style="background-color: purple; color: white;">Project 4</button>
     <button onclick="showscavengerhuntPhotos()" style="background-color: purple; color: white;">Scavenger Hunt</button>
+    <button onclick="showProject5Photos()" style="background-color: purple; color: white;">Project 5</button>
 
 
 
@@ -155,6 +156,12 @@
     </div>
 
 
+    <div id="project5-photos" style="display:none;">
+        <h2>Project 5: Alarm Clock Holder</h2>
+        <p>Post reflection Project 5 - Coming into this project, I was very excited about the idea of building an alarm clock for the first time in my life! I felt that this would be one of the most exciting projects we did so far. Throughout the process, I experienced both challenges and successes, but I am proud to have completed it in the end. During this project I worked with my teammate, Charlie. We were working very efficiently together, and I really enjoyed working with him. We worked well together, and it made the project feel much more manageable. The most difficult part was the design phase, particularly using Fusion 360. The software presents a steep learning curve, but I found that overcoming these challenges helped me build my skills further. ENGR 11A class keeps surprising me. The work is not easy but the end result is very rewarding and gives me a sense of accomplishment.</p>
+        
+
+    </div>
 
     <script>
         function showCurrentPhotos() {
@@ -201,7 +208,15 @@
           document.getElementById("project4-photos").style.display = "none";
           document.getElementById("scavengerhunt-photos").style.display = "block"; 
         }
-        
+                function showProject5Photos() {
+            document.getElementById("current-photos").style.display = "none";
+            document.getElementById("new-photos").style.display = "none";
+            document.getElementById("project5-photos").style.display = "block";
+            document.getElementById("project4-photos").style.display = "none";
+            document.getElementById("project3-photos").style.display = "none";
+            document.getElementById("scavengerhunt-photos").style.display = "none"; 
+
+        }
 
     </script>
 </body>
