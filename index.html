@@ -40,7 +40,7 @@
     <button onclick="showNewPhotos()" style="background-color: green; color: white;">Project 2</button>
     <button onclick="showProject3Photos()" style="background-color: orange; color: white;">Project 3</button>
     <button onclick="showProject4Photos()" style="background-color: purple; color: white;">Project 4</button>
-    <button onclick="showScavengerhuntPhotos()" style="background-color: teal; color: white;">Scavenger Hunt</button>
+    <button onclick="scavengerhunt('scavenger-photos')" style="background-color: purple; color: white;">Scavenger Hunt</button>
 
 
     <div id="current-photos" style="display:none;">
@@ -145,7 +145,7 @@
         <p>Book: WHO IS THE BUILT WORLD BUILT FOR? (ALBERT CAMUS) </p>
     </div>
 
-    <div id="scavenger-hunt-photos" style="display:none;">
+    <div id="scavengerhunt-photos" style="display:none;">
         <h2>Scavenger Hunt</h2>
         <p>Welcome to the scavenger hunt! Here are some items you need to find:</p>
         <img src="IMG_2238.jpg" alt="Scavenger Item 1" width="300">
@@ -159,7 +159,7 @@
             document.getElementById("new-photos").style.display = "none";
             document.getElementById("project3-photos").style.display = "none";
             document.getElementById("project4-photos").style.display = "none";
-            document.getElementById("scavenger-hunt-photos").style.display = "none"; 
+            document.getElementById("scavengerhunt-photos").style.display = "none"; 
 
         }
 
@@ -168,7 +168,7 @@
             document.getElementById("new-photos").style.display = "block";
             document.getElementById("project3-photos").style.display = "none";
             document.getElementById("project4-photos").style.display = "none";
-            document.getElementById("scavenger-hunt-photos").style.display = "none"; 
+            document.getElementById("scavengerhunt-photos").style.display = "none"; 
 
         }
 
@@ -177,7 +177,7 @@
             document.getElementById("new-photos").style.display = "none";
             document.getElementById("project3-photos").style.display = "block";
             document.getElementById("project4-photos").style.display = "none";
-            document.getElementById("scavenger-hunt-photos").style.display = "none"; 
+            document.getElementById("scavengerhunt-photos").style.display = "none"; 
 
         }
 
@@ -186,18 +186,18 @@
             document.getElementById("new-photos").style.display = "none";
             document.getElementById("project3-photos").style.display = "none";
             document.getElementById("project4-photos").style.display = "block";
-            document.getElementById("scavenger-hunt-photos").style.display = "none"; 
+            document.getElementById("scavengerhunt-photos").style.display = "none"; 
 
 
         }
 
-        function showScavengerhuntPhotos() {
+        function showscavengerhuntPhotos() {
     // Hide all project sections
           document.getElementById("current-photos").style.display = "none";
           document.getElementById("new-photos").style.display = "none";
           document.getElementById("project3-photos").style.display = "none";
           document.getElementById("project4-photos").style.display = "none";
-          document.getElementById("scavenger-hunt-photos").style.display = "block"; 
+          document.getElementById("scavengerhunt-photos").style.display = "block"; 
     </script>
 </body>
 
