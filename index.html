@@ -41,7 +41,6 @@
     <button onclick="showProject3Photos()" style="background-color: orange; color: white;">Project 3</button>
     <button onclick="showProject4Photos()" style="background-color: purple; color: white;">Project 4</button>
     <button onclick="showscavengerhuntPhotos()" style="background-color: purple; color: white;">Scavenger Hunt</button>
-    <button onclick="showscavengerPhotos()" style="background-color: purple; color: white;">Scavenger</button>
 
 
 
@@ -154,11 +153,7 @@
         <img src="scavenger_item2.JPG" alt="Scavenger Item 2" width="300">
         <img src="scavenger_item3.jpg" alt="Scavenger Item 3" width="300">
     </div>
-        <div id="scavenger-photos" style="display:none;">
-    <!-- Your scavenger hunt content goes here -->
-    <h2>Scavenger Hunt</h2>
-    <p>Description or content of the scavenger hunt project.</p>
-</div>
+
 
 
     <script>
@@ -207,9 +202,6 @@
           document.getElementById("scavengerhunt-photos").style.display = "block"; 
         }
         
-    function showscavengerhuntPhotos() {
-        document.getElementById("scavenger-photos").style.display = "block";
-    }
 
     </script>
 </body>
