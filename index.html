@@ -183,12 +183,14 @@
 
         }
 
-                function showScavengerhuntPhotos() {
-            document.getElementById("current-photos").style.display = "none";
-            document.getElementById("new-photos").style.display = "none";
-            document.getElementById("project3-photos").style.display = "none";
-            document.getElementById("project4-photos").style.display = "block";
-                }
+        function showScavengerhuntPhotos() {
+    // Hide all project sections
+          document.getElementById("current-photos").style.display = "none";
+          document.getElementById("new-photos").style.display = "none";
+          document.getElementById("project3-photos").style.display = "none";
+          document.getElementById("project4-photos").style.display = "none";
+          document.getElementById("scavenger-hunt-photos").style.display = "block"; // This assumes you have a div with this ID
+}
     </script>
 </body>
 
