@@ -40,7 +40,6 @@
     <button onclick="showNewPhotos()" style="background-color: green; color: white;">Project 2</button>
     <button onclick="showProject3Photos()" style="background-color: orange; color: white;">Project 3</button>
     <button onclick="showProject4Photos()" style="background-color: purple; color: white;">Project 4</button>
-    <button onclick="showscavengerhuntPhotos()" style="background-color: purple; color: white;">Scavenger Hunt</button>
     <button onclick="showProject5Photos()" style="background-color: purple; color: white;">Project 5</button>
 
 
@@ -147,15 +146,6 @@
         <p>Book: WHO IS THE BUILT WORLD BUILT FOR? (ALBERT CAMUS) </p>
     </div>
 
-    <div id="scavengerhunt-photos" style="display:none;">
-        <h2>Scavenger Hunt</h2>
-        <p>Welcome to the scavenger hunt! Here are some items you need to find:</p>
-        <img src="IMG_2238.jpg" alt="scavengerhunt" width="300">
-        <img src="scavenger_item2.JPG" alt="Scavenger Item 2" width="300">
-        <img src="scavenger_item3.jpg" alt="Scavenger Item 3" width="300">
-    </div>
-
-
     <div id="showProject5-photos" style="display:none;">
         <h2>Project 5: Alarm Clock Holder</h2>
    
@@ -199,13 +189,6 @@
 
         }
 
-        function showscavengerhuntPhotos() {
-          document.getElementById("current-photos").style.display = "none";
-          document.getElementById("new-photos").style.display = "none";
-          document.getElementById("project3-photos").style.display = "none";
-          document.getElementById("project4-photos").style.display = "none";
-          document.getElementById("scavengerhunt-photos").style.display = "block"; 
-        }
                 function showProject5Photos() {
             document.getElementById("current-photos").style.display = "none";
             document.getElementById("new-photos").style.display = "none";
