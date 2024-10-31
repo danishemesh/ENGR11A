@@ -188,44 +188,26 @@
 
    </div>
 
-    <script>
-        function showCurrentPhotos() {
-            document.getElementById("current-photos").style.display = "block";
-            document.getElementById("new-photos").style.display = "none";
-            document.getElementById("project3-photos").style.display = "none";
-            document.getElementById("project4-photos").style.display = "none";
-                    document.getElementById("project5-photos").style.display = "none";
+<script>
+    function showCurrentPhotos() {
+        hideAllProjects();
+        document.getElementById("current-photos").style.display = "block";
+    }
 
+    function showNewPhotos() {
+        hideAllProjects();
+        document.getElementById("new-photos").style.display = "block";
+    }
 
-        }
+    function showProject3Photos() {
+        hideAllProjects();
+        document.getElementById("project3-photos").style.display = "block";
+    }
 
-        function showNewPhotos() {
-            document.getElementById("current-photos").style.display = "none";
-            document.getElementById("new-photos").style.display = "block";
-            document.getElementById("project3-photos").style.display = "none";
-            document.getElementById("project4-photos").style.display = "none";
-                    document.getElementById("project5-photos").style.display = "none";
-
-
-        }
-
-        function showProject3Photos() {
-            document.getElementById("current-photos").style.display = "none";
-            document.getElementById("new-photos").style.display = "none";
-            document.getElementById("project3-photos").style.display = "block";
-            document.getElementById("project4-photos").style.display = "none";
-                    document.getElementById("project5-photos").style.display = "none";
-
-      }
-
-        function showProject4Photos() {
-            document.getElementById("current-photos").style.display = "none";
-            document.getElementById("new-photos").style.display = "none";
-            document.getElementById("project3-photos").style.display = "none";
-            document.getElementById("project4-photos").style.display = "block";
-                    document.getElementById("project5-photos").style.display = "none";
-
-        }
+    function showProject4Photos() {
+        hideAllProjects();
+        document.getElementById("project4-photos").style.display = "block";
+    }
 
     function showProject5Photos() {
         hideAllProjects();
@@ -239,6 +221,6 @@
         document.getElementById("project4-photos").style.display = "none";
         document.getElementById("project5-photos").style.display = "none";
     }
+</script>
 
-    </script>
 </body>
